@@ -14,10 +14,6 @@ import './css/styles.css';
 const searchForm = document.querySelector('.form');
 const searchInput = searchForm.elements['search-text'];
 
-document.addEventListener('DOMContentLoaded', () => {
-  initLightbox();
-});
-
 searchForm.addEventListener('submit', async event => {
   event.preventDefault(); 
   const query = searchInput.value.trim(); 
